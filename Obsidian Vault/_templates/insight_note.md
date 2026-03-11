@@ -3,6 +3,7 @@ type: insight
 population:
 activity:
 metric:
+domain:
 property:
 method:
 source:
