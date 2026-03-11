@@ -1,0 +1,1 @@
+Time between [[Foot Strikes]] of the same foot.

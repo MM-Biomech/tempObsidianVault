@@ -3,7 +3,7 @@
 Type: Population  
   
 Clinical scale:  
-  
+
 Commonly studied activities:  
 [[Straight-line walking]]  
 [[Turning]]  

@@ -1,0 +1,1 @@
+[[ontology_map]] should relate to where things are in the [[Gait Analyzer]]. Define, link insights, and direct. 

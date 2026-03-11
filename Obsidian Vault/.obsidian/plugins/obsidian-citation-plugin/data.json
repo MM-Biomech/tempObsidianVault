@@ -1,0 +1,9 @@
+{
+  "citationExportFormat": "biblatex",
+  "literatureNoteTitleTemplate": "{{citekey}}",
+  "literatureNoteFolder": "01_Papers",
+  "literatureNoteContentTemplate": "---\ntitle: {{title}}\nauthors: {{authorString}}\nyear: {{year}}\n---\n## Study Context\nPopulation:\nActivity:\nMeasurement system:\nStudy type:\n\n## Metrics Analyzed\n\n## Key Findings\n\n## Reference Data\n\n## Notes\n\n\n\n\n{{abstract}}\n\n{{authorString}} ({{year}}) **{{title}}**. *{{containerTitle}}* | doi:[{{DOI}}](https://doi.org/{{DOI}}) | @{{citekey}}\n\n",
+  "markdownCitationTemplate": "[{{citekey}}]",
+  "alternativeMarkdownCitationTemplate": "@{{citekey}}",
+  "citationExportPath": "C:\\Users\\mmavor\\Documents\\Projects\\myProjects\\tempObsidian\\Obsidian Vault\\_setup_files\\Celestra.bib"
+}
