@@ -2,7 +2,7 @@
   "citationExportFormat": "biblatex",
   "literatureNoteTitleTemplate": "{{citekey}}",
   "literatureNoteFolder": "01_Papers",
-  "literatureNoteContentTemplate": "---\ntype: paper\ncitekey: {{citekey}}\nyear: {{year}}\n---\n## Study Context\nPopulation:\n\nActivity:\n\nMethod:\n\nStudy type:\n\n## Metrics Analyzed\n\n## Key Findings\n\n## Reference Data\n\n## Notes\n\n\n\n\n{{abstract}}\n\n{{authorString}} ({{year}}) **{{title}}**. *{{containerTitle}}* | doi:[{{DOI}}](https://doi.org/{{DOI}}) | @{{citekey}}\n\n",
+  "literatureNoteContentTemplate": "---\ntype: paper\ncitekey: {{citekey}}\nyear: {{year}}\nstatus: unread\n---\n## Study Context\n\nPopulation:\n- [[]]\n\nActivity:\n- [[]]\n\nMethods:\n- [[]]\n\nSample Size:\n\n---\n\n## Metrics Studied\n\n- [[]]\n\n---\n\n## Key Insights Extracted\n\n- [[]]\n\n---\n\n## Reference Data Extracted\n\n- [[]]\n\n---\n\n## Notes\n\n{{authorString}} ({{year}}) **{{title}}**. *{{containerTitle}}* | doi:[{{DOI}}](https://doi.org/{{DOI}}) | @{{citekey}}\n\n",
   "markdownCitationTemplate": "[{{citekey}}]",
   "alternativeMarkdownCitationTemplate": "@{{citekey}}",
   "citationExportPath": "C:\\Users\\mmavor\\Documents\\Projects\\myProjects\\tempObsidian\\Obsidian Vault\\_setup_files\\Celestra.bib"

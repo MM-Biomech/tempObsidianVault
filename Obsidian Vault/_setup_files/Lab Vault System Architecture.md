@@ -1,6 +1,6 @@
 ## Purpose
 
-This document defines the structure, rules, and intended use of the lab’s Obsidian research vault.
+This document defines the structure, rules, and intended use of the lab's Obsidian research vault.
 
 The vault is designed to function as a **long-term research knowledge system**, not simply a literature note repository.
 
@@ -110,6 +110,7 @@ Obsidian functions as a **knowledge graph built on top of the literature databas
 04_Reference_Data/  
 05_Projects/  
 06_Manuscripts/  
+_setup_files/  
 _templates/
 
 ---
@@ -120,6 +121,8 @@ _templates/
 
 Temporary location for incomplete or unprocessed notes.
 
+Also contains `changelog.md` — a running log of structural changes to the vault.
+
 ---
 
 ## 01_Papers
@@ -127,6 +130,8 @@ Temporary location for incomplete or unprocessed notes.
 One note per literature source.
 
 Paper notes serve as **navigation hubs linking insights and extracted data**.
+
+Paper notes are created using the **Citations plugin**, which auto-populates `citekey` and `year` from Zotero. See `_templates/paper_note.md` for the canonical structure.
 
 ---
 
@@ -157,6 +162,8 @@ These notes define concepts such as:
 - properties
     
 
+**Ontology nodes do not use YAML frontmatter.** All structure is expressed through body text and wikilinks. This keeps creation overhead low.
+
 ---
 
 ## 04_Reference_Data
@@ -179,9 +186,29 @@ Working notes used when assembling papers or reports.
 
 ---
 
+## _setup_files
+
+Vault documentation and configuration reference files.
+
+Contains this architecture document, design notes, and exported Zotero library files.
+
+---
+
 ## _templates
 
 Templates used when creating standardized notes.
+
+| Template | Purpose |
+|---|---|
+| `paper_note.md` | Canonical paper note structure; mirrors Citations plugin template |
+| `insight_note.md` | Insight note with full frontmatter |
+| `reference_data.md` | Reference data table with example columns |
+| `ontology_population.md` | Population ontology node |
+| `ontology_activity.md` | Activity ontology node |
+| `ontology_method.md` | Method ontology node |
+| `ontology_metric.md` | Metric ontology node including equation field |
+| `ontology_metric_domain.md` | Metric domain ontology node |
+| `ontology_property.md` | Property ontology node |
 
 ---
 
@@ -207,18 +234,22 @@ This framework allows flexible connections between studies and findings.
 
 Ontology nodes define the conceptual vocabulary used across the vault.
 
+Ontology nodes use body text and wikilinks only — no YAML frontmatter.
+
 ## Populations
 
 Examples:
 
 - Multiple Sclerosis
     
-- Parkinson’s Disease
+- Parkinson's Disease
     
 - Healthy Adults
     
 - CIDP
     
+
+Note: Clinical conditions that are not populations per se (e.g. Foot Drop) may also be housed in `populations/` when they function as a study group label in the literature.
 
 ---
 
@@ -296,7 +327,7 @@ Domains provide a conceptual grouping of metrics and allow queries such as:
 
 - all variability findings in MS
     
-- all pace-related metrics studied in Parkinson’s disease
+- all pace-related metrics studied in Parkinson's disease
     
 
 ---
@@ -318,11 +349,25 @@ Examples:
 
 Metrics should link to their domain.
 
+Obsidian has **built-in math rendering** (KaTeX). Use `$$...$$` for block equations and `$...$` for inline. No plugin required.
+
 Example metric note:
 
-# Stride Time  
-  
+# Stride Time
+
+Type: Metric
+
+Definition:
+Time between [[Foot Strikes]] of the same foot.
+
+Equation:
+$$
+\text{Stride Time} = t_{\text{heel strike}_2} - t_{\text{heel strike}_1}
+$$
+
 Domain: [[Rhythm]]
+
+Unit: seconds (s)
 
 ---
 
@@ -357,19 +402,18 @@ The purpose of properties is to enable **knowledge queries**, not to recreate Zo
 
 # Paper Note Properties
 
-Paper notes require only minimal metadata.
+Paper notes require only minimal metadata. The **Citations plugin** auto-fills `citekey` and `year` from Zotero when creating a note.
 
-Example:
+Example frontmatter:
 
 ---  
 type: paper  
 citekey: smithValidationInsoles2024  
 year: 2024  
+status: unread  
 ---
 
-Optional:
-
-status: unread / reading / processed
+`status` is optional and may be: `unread` / `reading` / `processed`
 
 All conceptual information should appear **inside the note body as links**.
 
@@ -427,9 +471,8 @@ Example structure:
 type: paper  
 citekey: smithValidationInsoles2024  
 year: 2024  
+status: unread  
 ---  
-  
-# Smith et al. — Validation of Instrumented Insoles  
   
 ## Study Context  
   
@@ -477,7 +520,7 @@ PwPD: 15
   
 ---  
   
-## Notes (Optional)  
+## Notes  
   
 Observations that may later become insights.
 
@@ -493,17 +536,17 @@ Example structure:
 
 ---  
 type: insight  
-population:  
-activity:  
-metric:  
-domain:  
-property:  
-method:  
-source:  
-citekey:  
+population: Multiple Sclerosis  
+activity: Straight-line Walking  
+metric: Stride Velocity  
+domain: Pace  
+property: Clinical Association  
+method: IMU  
+source: smithValidationInsoles2024  
+citekey: smithValidationInsoles2024  
 ---  
   
-Claim statement.  
+Stride velocity is reduced in people with MS relative to healthy adults and correlates with EDSS.  
   
 Evidence:  
 Brief explanation of the finding.  
@@ -532,13 +575,19 @@ These usually correspond to:
 - one group of related numerical results
     
 
-Example note:
+Note naming convention:
 
-smithValidationStudy2024 — Agreement Metrics
+`citekey — Description` (e.g. `smithValidationStudy2024 — Agreement Metrics`)
 
-Tables from papers may be pasted directly with minimal formatting.
+The baseline table structure is:
 
-Example:
+| Metric | Population | Group | N | Mean | SD |
+|--------|------------|-------|---|------|----|
+| [[Stride Time]] | [[Healthy Adults]] | | | | |
+
+**Column structure will vary by study.** Adapt columns to match the paper's reported values (e.g. replace SD with SEM, LoA, ICC, etc.). The `Metric` and `Population` columns should always use wikilinks to ontology nodes — this enables retrieval via backlinks.
+
+Example (agreement study):
 
 Source: [[smithValidationStudy2024]]  
 Citation: @smithValidationStudy2024  
@@ -547,10 +596,6 @@ Citation: @smithValidationStudy2024
 |------|------|------|------|------|------|  
 | [[Stride Time]] | [[Healthy Adults]] | 1.151 | -0.016 | 0.021 | -0.053 |  
 | [[Stride Time]] | [[Multiple Sclerosis]] | 1.375 | -0.019 | 0.034 | -0.072 |
-
-Metric names should be **linked to ontology nodes**.
-
-This enables retrieval via backlinks.
 
 ---
 
@@ -576,13 +621,13 @@ This approach scales naturally as the vault grows.
 
 1. Import paper into Zotero.
     
-2. Create paper note in `01_Papers`.
+2. Use the **Citations plugin** (`Ctrl+Shift+O`) to create the paper note in `01_Papers`.
     
-3. Extract **1–5 insight notes**.
+3. Extract **1–5 insight notes** into `02_Insights`.
     
-4. Extract **reference data notes if numerical values are important**.
+4. Extract **reference data notes** into `04_Reference_Data` if numerical values are important.
     
-5. Link insights and data to ontology nodes.
+5. Link insights and data to ontology nodes in `03_Ontology`.
     
 
 Typical processing time:

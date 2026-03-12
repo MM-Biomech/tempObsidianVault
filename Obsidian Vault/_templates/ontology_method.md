@@ -9,3 +9,6 @@ Common uses:
 
 Compared to:
 - [[]]
+
+Limitations:
+- [[]]
