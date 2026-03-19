@@ -3,7 +3,7 @@
 A structured Obsidian research vault for wearable-sensor gait analysis literature.
 Designed for labs working with neurological populations (Parkinson's disease, MS, CIDP, Foot Drop) who need to accumulate knowledge across papers and rapidly retrieve it for manuscript writing.
 
-Built on **Obsidian** + **Zotero**, with Dataview, Templater, and Zotero Integration plugins.
+Built on **Obsidian** + **Zotero**, with Zotero Integration, Dataview, and Templater plugins. All plugins are pre-installed and pre-configured in the repository — no manual plugin setup required after cloning.
 
 ---
 
@@ -25,6 +25,8 @@ Install these before cloning:
 | [Sourcetree](https://www.sourcetreeapp.com/) | Git client used to clone and sync this repo | sourcetreeapp.com |
 | [Obsidian](https://obsidian.md/) | The application that runs the vault | obsidian.md |
 | [Zotero](https://www.zotero.org/) | Reference manager — stores PDFs, metadata, and your annotations | zotero.org |
+| [Better BibTeX](https://retorque.re/zotero-better-bibtex/installation/) | Zotero plugin — generates stable citekeys and powers the Obsidian ↔ Zotero connection | Install inside Zotero via Tools → Add-ons |
+| Zotero Word Plugin | Inserts citations into Word manuscripts from your Zotero library | Zotero → Tools → Install MS Word Add-in |
 
 ---
 
@@ -70,8 +72,10 @@ Click **Clone**. Sourcetree will download the repository. When complete, you wil
 
 1. Open Obsidian
 2. Click **Open folder as vault**
-3. Navigate into the cloned folder and select the **`Obsidian Vault`** subfolder (not the root `literatureVault` folder)
-4. Obsidian will load the vault
+3. Navigate into the cloned folder and select the **`Obsidian Vault`** subfolder — not the root `literatureVault` folder
+4. When prompted *"This vault contains community plugins..."*, click **Trust author and enable plugins**
+
+All plugins are already installed and configured. No additional setup is required.
 
 ---
 
@@ -83,7 +87,22 @@ Once Obsidian opens, navigate to:
 _setup_files/QUICKSTART.md
 ```
 
-This file walks you through installing the required plugins (Dataview, Templater, Zotero Integration, Citations) and processing your first paper.
+This file covers connecting Zotero Integration to your Zotero library and processing your first paper.
+
+---
+
+## Shared Zotero Library
+
+Papers, PDFs, and annotations are shared through a **Zotero Group Library** — not through this Git repository.
+
+- Request access to the group from the lab admin (you'll receive an email invitation)
+- Sign in to your Zotero account under **Edit → Preferences → Sync** and click Sync to pull the shared library
+- PDFs and metadata will sync automatically once you're in the group
+
+**Git stores:** Obsidian notes, templates, ontology nodes, dashboards, and plugin settings.
+**Zotero stores:** PDFs, annotations, bibliographic metadata.
+
+See `_setup_files/QUICKSTART.md` Step 2 for full Zotero setup instructions including Better BibTeX configuration.
 
 ---
 
