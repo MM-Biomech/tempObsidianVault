@@ -1,3 +1,9 @@
+> **New to this vault?** Start with `_setup_files/QUICKSTART.md` — it covers software setup, plugin installation, and a step-by-step first paper walkthrough. Return here once you are up and running for full architectural detail.
+
+> **Using an AI assistant?** See `_setup_files/LLM_CONTEXT.md` for a concise machine-readable summary of the vault's research domain, note types, and conventions.
+
+---
+
 ## Purpose
 
 This document defines the structure, rules, and intended use of the lab's Obsidian research vault.
@@ -637,7 +643,6 @@ metric: Stride Velocity
 domain: Pace  
 property: Clinical Association  
 method: IMU  
-source: smithValidationInsoles2024  
 citekey: smithValidationInsoles2024  
 ---  
   
@@ -818,9 +823,11 @@ You do not need to remember which papers have pending insights. The paper note c
 
 The unresolved ontology query uses a word-count heuristic to separate ontology-type links (short noun phrases) from insight-type links (sentence-form titles). The threshold is 7 words.
 
-To use the Processing Queue, open it and:
+To use the Processing Queue:
 
-When you open a `status: reading` paper from this list, the Outgoing Links panel shows you exactly which insight wikilinks are still unresolved. Set `status: processed` when all insight files are created.
+- Papers in the first table are ready for insight extraction — open each one and use the **Outgoing Links panel** (right sidebar) to see which insight wikilinks are still unresolved
+- Missing ontology items in the second table can be created via **Templater: Create new note from template** — choose the template matching the Type column; the file will auto-move to the correct ontology subfolder
+- Set `status: processed` on a paper note when all its insight files have been created
 
 ---
 

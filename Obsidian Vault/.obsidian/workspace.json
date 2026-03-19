@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_setup_files/Lab Vault System Architecture.md",
+                "file": "_setup_files/QUICKSTART.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lab Vault System Architecture"
+              "title": "QUICKSTART"
             }
           }
         ]
@@ -185,6 +185,9 @@
   },
   "active": "f85f04517e4e6db3",
   "lastOpenFiles": [
+    "_setup_files/Lab Vault System Architecture.md",
+    "_setup_files/LLM_CONTEXT.md",
+    "_setup_files/QUICKSTART.md",
     "_setup_files/Design insights.md",
     "03_Ontology/ontology_map.md",
     "_templates/project_note.md",
@@ -209,9 +212,6 @@
     "_templates/ontology_statistic.md",
     "03_Ontology/metrics/Foot Pitch Angle.md",
     "03_Ontology/Statistics",
-    "ANOVA.md",
-    "00_Inbox/changelog.md",
-    "01_Papers/monaghan2021ApplicationPrincipal.md",
     "03_Ontology/Clinical Measure",
     "01_Papers/figures/sharifbidabadiApplicationInertialMeasurements2017_fig12.png",
     "01_Papers/figures/monaghan2021ApplicationPrincipal/image-2-x114-y376.png",
