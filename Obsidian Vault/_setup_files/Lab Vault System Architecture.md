@@ -203,6 +203,10 @@ These notes define concepts such as:
 
 All ontology node templates include a **Referenced In** section at the bottom — a live DataviewJS query that automatically lists every paper and insight note that links to this node. This makes each ontology note a knowledge hub: definition + literature coverage + derived insights, all in one place. No manual maintenance required.
 
+**Exception:** Property nodes (`02_Insights/` YAML uses `property:` as plain text, not a wikilink) do not include a Referenced In query as it would return no results.
+
+All ontology templates use `# <% tp.file.title %>` as the heading line. When a note is created via **Templater: Create new note from template**, this is replaced with the filename automatically. Do not manually type the title into the heading — the filename is the title.
+
 ---
 
 ## 04_Reference_Data

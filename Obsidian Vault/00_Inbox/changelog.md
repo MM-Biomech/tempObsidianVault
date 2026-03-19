@@ -191,3 +191,21 @@ All existing ontology files updated to match current templates:
 - Added: Purpose, Administration, Score range, Interpretation, Conditions description, Relevant populations, Referenced In query
 
 ---
+
+## 2026-03-17 — Template Heading Convention + TUG Moved
+
+### Updated
+
+- All ontology templates (`ontology_population.md`, `ontology_activity.md`, `ontology_method.md`, `ontology_statistic.md`, `ontology_metric.md`, `ontology_metric_domain.md`, `ontology_property.md`, `ontology_clinical_measure.md`) — replaced static placeholder headings (e.g. `# [Metric Name]`) with `# <% tp.file.title %>` so the heading is filled automatically from the filename on note creation; no manual heading edit required
+- `_setup_files/Lab Vault System Architecture.md` — added Clinical Measures section to Ontology Structure; added note clarifying TUG and similar performance tests belong in `Clinical Measure/` not `activities/`; added note on Statistical methods living in `methods/`; documented `# <% tp.file.title %>` heading convention; added Referenced In exception for property nodes
+
+### Moved
+
+- `03_Ontology/activities/TUG.md` → `03_Ontology/Clinical Measure/TUG.md` — TUG is a standardised clinical performance test with defined scoring; belongs in Clinical Measure rather than activities
+
+### Decisions Recorded
+
+- All ontology template headings use `# <% tp.file.title %>` — the heading is always derived from the filename; do not type the title manually into the heading
+- Performance tests with defined clinical scoring (TUG, 10MWT, 6MWT, etc.) belong in `Clinical Measure/`, not `activities/`; activities are movement task types, clinical measures are scored instruments
+
+---
