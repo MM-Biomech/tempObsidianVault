@@ -121,6 +121,66 @@ if (missing.size === 0) {
 
 ---
 
+## Missing Insight Files
+
+Sentence-form wikilinks (7+ words) in paper notes that point to a file that does not yet exist. These are insights that have been named but not created.
+
+```dataviewjs
+const WORD_THRESHOLD = 7;
+const IMAGE_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.bmp', '.tiff'];
+
+const missing = new Map(); // linkName -> [page]
+
+for (const page of dv.pages('"01_Papers"')) {
+    for (const link of page.file.outlinks) {
+        if (dv.page(link.path)) continue;
+        const lower = link.path.toLowerCase();
+        if (IMAGE_EXTENSIONS.some(ext => lower.endsWith(ext))) continue;
+        if (link.path.trim().split(/\s+/).length < WORD_THRESHOLD) continue;
+        if (!missing.has(link.path)) missing.set(link.path, []);
+        missing.get(link.path).push(page);
+    }
+}
+
+if (missing.size === 0) {
+    dv.paragraph("✓ No missing insight files found.");
+} else {
+    const rows = [];
+    for (const [linkName, pages] of missing) {
+        const sources = [...new Set(pages.map(p => p.file.link))];
+        rows.push([`[[${linkName}]]`, sources]);
+    }
+    rows.sort((a, b) => a[0].localeCompare(b[0]));
+    dv.table(["Missing Insight", "Source Paper"], rows);
+}
+```
+
+**To process an item from this list:**
+1. Open the source paper note — find the wikilink in **Key Insights Extracted**
+2. Use the Yellow highlight text below it as the body draft
+3. Run **Templater: Create new note from template** → `insight_note.md`, name it exactly as shown
+4. Fill YAML frontmatter (`population`, `metric`, `domain`, `property`, `method`, `citekey`) and write one sentence claim
+
+---
+
+## Incomplete Insight Notes
+
+Insight files that exist in `02_Insights/` but are missing critical frontmatter. These were created (by clicking a wikilink) but not yet filled in.
+
+```dataview
+TABLE population, metric, citekey
+FROM "02_Insights"
+WHERE !citekey OR !population OR !metric
+SORT file.name ASC
+```
+
+**To process an item from this list:**
+1. Open the insight note
+2. Fill the YAML frontmatter (`population`, `metric`, `domain`, `property`, `method`, `citekey`)
+3. Replace the placeholder body with one sentence claim
+
+---
+
 ## All Papers by Status
 
 ```dataview

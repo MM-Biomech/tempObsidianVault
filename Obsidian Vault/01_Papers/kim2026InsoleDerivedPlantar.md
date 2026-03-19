@@ -2,7 +2,7 @@
 type: paper
 citekey: kim2026InsoleDerivedPlantar
 year: 2026
-status: reading
+status: processed
 ---
 ## Study Context
 %% begin study-context %%
@@ -74,7 +74,7 @@ Methods Details:
 ## Key Insights Extracted
 %% begin key-insights %%
 - [[People with early Parkinson's disease have lower peak pressure at heel strike and more forefoot loading]]
-- [[Heel pressure variability is elevated in early Parkinson's disease]]
+- [[Spatiotemporal variability during dual-task TUG increases progressively across healthy young, older adults, and early Parkinson's disease]]
 - [[Pressure profiles may be more sensitive than spatiotemporal in early Parkinson's disease]]
 
 - (p. 2) Notably, patients with PD exhibit distinct plantar pressure profiles compared with healthy controls, including diminished heelstrike pressure, increased forefoot loading, and altered center of pressure (COP) trajectories [17], [18], [19].
