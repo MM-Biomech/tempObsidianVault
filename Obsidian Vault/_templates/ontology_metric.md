@@ -1,18 +1,21 @@
-﻿<%* await tp.file.move("03_Ontology/metrics/" + tp.file.title) %>
+<%* await tp.file.move("03_Ontology/metrics/" + tp.file.title) %>
 # <% tp.file.title %>
 
 Type: Metric
 
 Definition:
 
+
 Equation:
 $$
 \text{Metric} = \frac{\text{numerator}}{\text{denominator}}
 $$
 
-Domain: [[]]
+Domain: 
+[[]]
 
 Unit:
+
 
 Interpretation:
 - Higher values indicate:
