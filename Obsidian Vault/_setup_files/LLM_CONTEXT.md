@@ -89,14 +89,16 @@ status: unread | reading | processed
 **YAML frontmatter:**
 ```yaml
 type: insight
-population: Parkinsons Disease       # plain text, matches ontology node name
-activity: Straight-line walking
-metric: Stride Velocity
-domain: Pace
-property: Clinical Association
-method: IMU
-citekey: authorYearKeyword
+population: Parkinsons Disease       # plain text — NO wikilinks [[...]] in YAML
+activity: Straight-line walking      # plain text
+metric: Stride Velocity              # plain text
+domain: Pace                         # Pace | Rhythm | Variability | Asymmetry | Postural Control
+property: Clinical Association       # Reliability | Validation | Clinical Association | Sensitivity | Detection | Variability
+method: IMU                          # plain text (optional)
+citekey: authorYearKeyword           # plain text
 ```
+
+**Critical rule: all YAML values are plain text.** Wikilinks (`[[...]]`) in YAML fields break all Dataview queries — the Insight Explorer and Processing Queue will silently return no results for that note.
 **Body:** One sentence claim (manuscript-ready) + Evidence paragraph + optional Reference Data links
 
 **Naming convention:** Sentence-form title describing the finding, e.g.:

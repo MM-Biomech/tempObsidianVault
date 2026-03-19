@@ -556,15 +556,19 @@ Recommended structure:
 
 ---  
 type: insight  
-population:  
-activity:  
-metric:  
-domain:  
-property:  
-method:  
-source:  
-citekey:  
+population: Parkinsons Disease  
+activity: Straight-line walking  
+metric: Stride Time  
+domain: Rhythm  
+property: Sensitivity  
+method: IMU  
+citekey: authorYearKeyword  
 ---
+
+**All YAML values must be plain text — no wikilinks `[[...]]`.** Dataview reads YAML as raw strings; wikilinks in YAML break all Insight Explorer and Processing Queue queries.
+
+Valid `domain` values: `Pace` / `Rhythm` / `Variability` / `Asymmetry` / `Postural Control`  
+Valid `property` values: `Reliability` / `Validation` / `Clinical Association` / `Sensitivity` / `Detection` / `Variability`
 
 These properties allow insights to be queried using:
 
