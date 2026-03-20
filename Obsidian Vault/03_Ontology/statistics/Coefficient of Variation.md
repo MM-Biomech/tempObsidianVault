@@ -1,23 +1,26 @@
-<%* await tp.file.move("03_Ontology/statistics/" + tp.file.title) %>
-# <% tp.file.title %>
+
+# Coefficient of Variation
 
 Type: Statistic
 
 Description:
+A relative measure of variability that indicated the size of a standard deviation relative to its mean. 
 
 Formula / Equation:
 $$
-\text{Metric} = \frac{\text{numerator}}{\text{denominator}}
+\text{CV} = \frac{\text{Standard Deviation}}{\text{Mean}}
 $$
 
 Interpretation:
-- 
+- Percentage, dimensionless
+- High value is more variability relative to the mean
 
 Assumptions / When to use:
-- 
+- Comparing between datasets with different units or widely different means
+- Understanding the variability of a metric
 
 Common uses:
-- [[]]
+- [[03_Ontology/metric_domains/Variability|Variability]]
 
 ---
 

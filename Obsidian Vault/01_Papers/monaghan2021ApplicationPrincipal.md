@@ -24,7 +24,7 @@ Population:
 | Energy and fatigue ([[SF-36]])            | 46.69 (22.12)  | 70.44 (15.59) | **< 0.001** |
 | [[Berg balance scale]]                    | 53.07 (4.84)   | –             | –           |
 | [[Falls efficacy scale]]                  | 25.78 (8.51)   | 18.13 (2.17)  | **< 0.001** |
-| [[Stroop word test]] (interference score) | 20.12 (5.47)   | 7.34 (3.64)   | **< 0.001** |
+| [[Stroop Word Test]] (interference score) | 20.12 (5.47)   | 7.34 (3.64)   | **< 0.001** |
 
 Sample Size:
  - 122 PwMS
@@ -37,7 +37,7 @@ Methods:
 - [[Berg balance scale]]
 - [[SF-36]]
 - [[Falls efficacy scale]]
-- [[Stroop word test]]
+- [[Stroop Word Test]]
 - [[IMU]] - Opal whole body (128 Hz). Six sensors placed on the feet, wrists, chest, and lumbar region of the lower back.
 - 
 

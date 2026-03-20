@@ -53,6 +53,10 @@
     {
       "folder": "03_Ontology/Statistics",
       "template": "_templates/ontology_statistic.md"
+    },
+    {
+      "folder": "",
+      "template": ""
     }
   ],
   "enable_file_templates": false,
