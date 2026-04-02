@@ -1,4 +1,4 @@
-﻿
+
 # Stance Time
 
 Type: Metric
@@ -15,6 +15,23 @@ seconds
 Interpretation:
 - Higher values indicate: less healthy behaviour, possibly lower walking speed, higher [[Double Support Time]]
 - Lower values indicate: more healthy behaviour, possibly higher walking speed
+
+---
+
+## Celestra
+
+Celestra Status:: Implemented
+
+Algorithm / Implementation Notes:
+spatiotemporal.py
+
+<!-- If Implemented: brief description of the algorithm used, or a link to the internal doc / codebase reference. If Planned: note the intended approach or any dependencies. If Not Possible: note the technical reason (e.g. sensor location limitation, or sensor type not available). -->
+
+Validated Against:
+- [[Optical Motion Capture]]
+- [[Force Plate]]
+
+<!-- Wikilink to the reference method used for validation. Leave blank if not yet validated. Link to the relevant paper note once a validation study exists. -->
 
 ---
 

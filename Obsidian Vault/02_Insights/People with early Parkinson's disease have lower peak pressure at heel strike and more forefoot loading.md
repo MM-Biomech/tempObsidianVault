@@ -1,6 +1,6 @@
 ---
 type: insight
-population: Parkinsons Disease
+population: Parkinson's Disease
 activity: TUG
 metric: Spatiotemporal
 domain: Variability

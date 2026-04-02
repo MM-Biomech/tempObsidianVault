@@ -1,4 +1,4 @@
-﻿# Symmetry Ratio (SR)
+# Symmetry Ratio (SR)
 
 Type: Metric
 
@@ -18,6 +18,23 @@ Interpretation:
 - 1.0 = perfect symmetry
 - Values above 1.0 indicate right limb dominance; below 1.0 indicate left limb dominance
 - e.g. SR = 2.0 means right-side value is twice the left
+
+---
+
+## Celestra
+
+Celestra Status:: Not Planned
+
+Algorithm / Implementation Notes:
+spatiotemporal.py
+
+<!-- If Implemented: brief description of the algorithm used, or a link to the internal doc / codebase reference. If Planned: note the intended approach or any dependencies. If Not Possible: note the technical reason (e.g. sensor location limitation, or sensor type not available). -->
+
+Validated Against:
+- [[Optical Motion Capture]]
+- [[Force Plate]]
+
+<!-- Wikilink to the reference method used for validation. Leave blank if not yet validated. Link to the relevant paper note once a validation study exists. -->
 
 ---
 

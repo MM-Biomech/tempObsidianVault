@@ -1,6 +1,6 @@
 ---
 type: insight
-population: Parkinsons Disease
+population: Parkinson's Disease
 activity: Straight-line Walking
 metric: Coefficient of Variation
 domain: Variability

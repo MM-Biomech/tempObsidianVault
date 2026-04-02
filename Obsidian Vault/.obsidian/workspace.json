@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "eb145df04bf2e275",
+        "id": "4fc1d13d975350ad",
         "type": "tabs",
         "children": [
           {
-            "id": "0c1944c6ae5e9907",
+            "id": "36db07c26aa8f331",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Ontology/populations/Parkinson's Disease.md",
+                "file": "00_Inbox/Insight Explorer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Parkinson's Disease"
-            }
-          },
-          {
-            "id": "c2394ed74cc39ba1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_setup_files/Vault in Practice — Writing Papers and Planning Projects.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Vault in Practice — Writing Papers and Planning Projects"
-            }
-          },
-          {
-            "id": "8be44eb4b4ad84fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01_Papers/sato2022SpatiotemporalGait.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "sato2022SpatiotemporalGait"
+              "title": "Insight Explorer"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,16 +94,17 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "00_Inbox/Insight Explorer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Insight Explorer"
             }
           },
           {
@@ -184,21 +156,20 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "00_Inbox/Insight Explorer.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Insight Explorer"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 288.5,
-    "collapsed": true
+    "width": 288.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,34 +184,34 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c2394ed74cc39ba1",
+  "active": "36db07c26aa8f331",
   "lastOpenFiles": [
+    "00_Inbox/Celestra Implementation Status.md",
+    "02_Insights/Gait variability CoV stabilizes within 15 strides in movement disorder groups.md",
+    "00_Inbox/Insight Explorer.md",
+    "00_Inbox/changelog.md",
+    "02_Insights/Walking turns elevate CoV of spatiotemporal parameters when not excluded from gait analysis.md",
+    "02_Insights/Turn detection algorithms may fail to identify wide-radius turns with low horizontal acceleration.md",
+    "02_Insights/Spatiotemporal variability during dual-task TUG increases progressively across healthy young, older adults, and early Parkinson's disease.md",
+    "02_Insights/Proprietary turn excision algorithms can fail and artificially inflate gait variability CoV.md",
+    "02_Insights/Pressure profiles may be more sensitive than spatiotemporal in early Parkinson's disease.md",
+    "02_Insights/People with early Parkinson's disease have lower peak pressure at heel strike and more forefoot loading.md",
+    "02_Insights/Impaired Dorsiflexion in Foot Drop.md",
+    "03_Ontology/populations/Healthy Adults.md",
+    "03_Ontology/populations/Foot Drop.md",
+    "03_Ontology/populations/CIDP.md",
+    "03_Ontology/populations/Parkinson's Disease.md",
+    "03_Ontology/populations/Healthy Older Adults.md",
+    "03_Ontology/populations/Multiple Sclerosis.md",
+    "01_Papers/sato2022SpatiotemporalGait.md",
+    "03_Ontology/metrics/Symmetry Ratio.md",
+    "_templates/ontology_metric.md",
+    "03_Ontology/metrics/Cadence.md",
+    "_setup_files/QUICKSTART.md",
     "_setup_files/Vault in Practice — Writing Papers and Planning Projects.md",
     "Untitled.md",
     "03_Ontology/metric_domains/Asymmetry.md",
-    "03_Ontology/metrics/Symmetry Ratio.md",
     "03_Ontology/metrics/Symmetry Index.md",
-    "01_Papers/kim2026InsoleDerivedPlantar.md",
-    "03_Ontology/populations/CIDP.md",
-    "03_Ontology/statistics/Test.md",
-    "03_Ontology/populations/Untitled.md",
-    "03_Ontology/populations/Foot Drop.md",
-    "03_Ontology/populations/Healthy Adults.md",
-    "03_Ontology/populations/Healthy Older Adults.md",
-    "03_Ontology/populations/Multiple Sclerosis.md",
-    "03_Ontology/populations/Parkinson's Disease.md",
-    "_templates/ontology_population.md",
-    "01_Papers/sato2022SpatiotemporalGait.md",
-    "00_Inbox/Processing Queue.md",
-    "04_Reference_Data/kroneberg2019LessMore - minimum number of strides for reliable CV selection.md",
-    "03_Ontology/metrics/Untitled.md",
-    "01_Papers/kroneberg2019LessMore.md",
-    "_setup_files/LLM_CONTEXT.md",
-    "_setup_files/Lab Vault System Architecture.md",
-    "_setup_files/QUICKSTART.md",
-    "T25FW.md",
-    "00_Inbox/Insight Explorer.md",
-    "03_Ontology/metrics/Stride Time.md",
     "03_Ontology/Clinical Measure",
     "03_Ontology/clinical_measure",
     "01_Papers/figures/kim2026InsoleDerivedPlantar/image-6-x35-y198.png",

@@ -22,6 +22,21 @@ Interpretation:
 - Lower values indicate:
 
 ---
+## Celestra
+
+Celestra Status:: 
+<!-- Implemented | Planned | Not Planned | Not Possible -->
+
+Algorithm / Implementation Notes:
+
+<!-- If Implemented: brief description of the algorithm used, or a link to the internal doc / codebase reference. If Planned: note the intended approach or any dependencies. If Not Possible: note the technical reason (e.g. sensor location limitation, or sensor type not available). -->
+
+Validated Against:
+- [[]]
+
+<!-- Wikilink to the reference method used for validation (e.g. [[Motion Capture]], [[Force Plates]]). Leave blank if not yet validated. Link to the relevant paper note once a validation study exists. -->
+
+---
 
 ## Referenced In
 

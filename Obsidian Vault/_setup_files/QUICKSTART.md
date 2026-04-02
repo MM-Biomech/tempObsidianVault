@@ -9,13 +9,13 @@ For full architectural detail, see `Lab Vault System Architecture.md`.
 
 Install these before anything else:
 
-| Software | Purpose | Where to get it |
-|---|---|---|
-| **Obsidian** | The note-taking application that runs this vault | [obsidian.md](https://obsidian.md/download) |
-| **Zotero** | Reference manager — stores PDFs, metadata, and annotations | [zotero.org](https://www.zotero.org/download/) |
-| **Zotero Connector** | Browser extension — saves papers to Zotero with one click | Bundled with Zotero; also available from [zotero.org](https://www.zotero.org/download/) |
-| **Better BibTeX** | Zotero plugin that generates stable citekeys and powers the Obsidian connection | [retorque.re/zotero-better-bibtex](https://retorque.re/zotero-better-bibtex/installation/) |
-| **Zotero Word Plugin** | Inserts citations into Word manuscripts directly from your Zotero library | Zotero → Tools → Install MS Word Add-in |
+| Software               | Purpose                                                                         | Where to get it                                                                            |
+| ---------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **Obsidian**           | The note-taking application that runs this vault                                | [obsidian.md](https://obsidian.md/download)                                                |
+| **Zotero**             | Reference manager — stores PDFs, metadata, and annotations                      | [zotero.org](https://www.zotero.org/download/)                                             |
+| **Zotero Connector**   | Browser extension — saves papers to Zotero with one click                       | Bundled with Zotero; also available from [zotero.org](https://www.zotero.org/download/)    |
+| **Better BibTeX**      | Zotero plugin that generates stable citekeys and powers the Obsidian connection | [retorque.re/zotero-better-bibtex](https://retorque.re/zotero-better-bibtex/installation/) |
+| **Zotero Word Plugin** | Inserts citations into Word manuscripts directly from your Zotero library       | Zotero → Tools → Install MS Word Add-in                                                    |
 
 ---
 

@@ -22,7 +22,7 @@ Edit the population name in the WHERE clause to filter.
 ```dataview
 TABLE metric, domain, property, file.link AS Insight, citekey
 FROM "02_Insights"
-WHERE population = "Parkinsons Disease"
+WHERE population = "Healthy Older Adults"
 SORT metric ASC
 ```
 
